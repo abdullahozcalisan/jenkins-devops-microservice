@@ -23,4 +23,15 @@ pipeline {
 			}
 		}			
 	}
+	post {
+		always {
+			echo 'ı run always'
+		}
+		success {
+			echo  'ı run only job is success'
+		}
+		failure {
+			echo 'ı run only job is failure'
+		}
+	}
 }
